@@ -1,0 +1,12 @@
+lista = []
+elemlista = 0 #número de elementos na lista
+while True:
+	a = str(input("-> "))
+	if a == '/show':
+		print('Dentro da lista estão:')
+		for c in range(1, elemlista + 1):
+			print(c, end=". ")
+			print(lista[c-1])
+	else:
+		lista.append(str(a))
+		elemlista += 1
